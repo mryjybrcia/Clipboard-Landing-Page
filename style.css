@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44);
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+.main {
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-wrap {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 90px;
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-align: center;
+  grid-gap: 40px;
+  padding-bottom: 60px;
+}
+
+.main-buttons {
+  padding-bottom: 30px;
+}
+
+.main-buttons button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 77px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.main-buttons button:first-child {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.main-buttons button:last-child {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.features {
+  padding: 70px 0;
+}
+
+.features-wrap {
+  margin: 0 auto;
+  width: 80%;
+}
+.features-wrap h2,
+p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.feature-flex {
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-align: center;
+  grid-gap: 60px;
+}
+.feature-text {
+  margin-bottom: 30px;
+}
+
+.feature-image img {
+  width: 300px;
+  margin-top: 30px;
+}
+
+.more-features {
+  padding: 50px 0;
+}
+
+.more-features-wrap {
+  margin: 0 auto;
+  width: 80%;
+}
+.more-features h2,
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.more-features-img img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.more-features-grid {
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  text-align: center;
+  grid-gap: 40px;
+}
+
+.more-feature img {
+  margin-bottom: 20px;
+}
+
+.users {
+  padding: 70px 0;
+}
+
+.users-wrap {
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  grid-gap: 70px;
+}
+
+.download {
+  padding: 70px 0;
+}
+
+.download-wrap {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.download-wrap p {
+  margin: 20px 0;
+}
+
+.download-buttons button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 77px;
+  border-radius: 30px;
+  margin-bottom: 12px;
+  color: white;
+  font-size: 15px;
+}
+
+.download-buttons button:first-child {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.download-buttons button:last-child {
+  background-color: hsl(233, 100%, 69%);
+}
+
+footer {
+  padding-top: 60px;
+}
+
+.footer-wrap {
+  display: grid;
+  display: -moz-grid;
+  display: -ms-grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  padding-top: 10px;
+}
+
+.footer-logo img {
+  margin-bottom: 20px;
+  height: 70px;
+}
+
+.footer-item:last-child {
+  margin: 20px 0;
+}
+
+.footer-item p {
+  cursor: pointer;
+}
+
+.footer-item span img {
+  cursor: pointer;
+}
+
+.footer-item p:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+.footer-item span img:hover {
+  background-color: hsl(171, 66%, 44%);
+}
+
+@media only screen and (min-width: 1090px) {
+  .main-wrap {
+    width: 50%;
+  }
+
+  .features-wrap {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .feature-flex {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 170px;
+    position: relative;
+  }
+
+  .feature-text {
+    margin-top: 70px;
+  }
+
+  .feature-image img {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: -160px;
+    top: 40px;
+  }
+
+  .more-features-wrap {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .more-features-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+  }
+
+  .more-feature img {
+    margin-bottom: 20px;
+  }
+
+  .users-wrap {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+
+  .download-wrap {
+    width: 60%;
+  }
+
+  .download-wrap p {
+    margin: 40px 0;
+  }
+
+  .footer-wrap {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer-item:nth-child(4) {
+    margin-top: -60px;
+  }
+
+  .attribution {
+    font-size: 19px;
+  }
+}
